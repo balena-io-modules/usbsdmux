@@ -129,7 +129,7 @@ class USB2642Eeprom(object):
         USB_PRD_STR = string_to_microchip_unicode_uint8_array(reader_productString, 0x99-0x5E+1),
         USB_BM_ATT = 0x80, # Bus Powered, without Remote wakeup
         USB_MAX_PWR = 0x30,# 0x30 * 2mA = 96mA Power Consumption
-        ATT_LB = 0x50, # use INQ-strings, SD card is write protected when SW_nWP is high
+        ATT_LB = 0x10, # use INQ-strings, SD card is write protected when SW_nWP is high
         ATT_HLB = 0x80,
         ATT_LHB = 0x00,
         ATT_HB = 0x00,
